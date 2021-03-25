@@ -1,0 +1,30 @@
+
+body {
+  font-family: times;
+}
+
+h1, h2, h3, h4, h5, h6 {
+text-align: center;
+text-transform: uppercase;
+}
+
+p {
+  padding: 5px;
+  margin: 10px 50px;
+  border: dashed red;
+  font: serif;
+  text-align: justify;
+  text-indent: 10px;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray-background {
+  background-color: gray;
+}

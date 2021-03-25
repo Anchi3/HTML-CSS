@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+.header {
+  background-color: aqua;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 35px;
+  font-family: times;
+}
+
+.navBar {
+  background-color: purple;
+  padding: 5px;
+  text-decoration: none;
+
+}
+
+.navBar a {
+  color: gray;
+  font-size: 25px;
+  padding: 5px;
+
+}
+.navBar a:hover {
+  color: purple;
+  background-color: gray;
+
+
+}
+
+.columnSide {
+  width: 250px;
+  padding: 15px;
+  font-size: 25px;
+  float: left;
+
+}
+
+.columnMiddle {
+    height: 200px;
+    width: 250px;
+    padding: 15px;
+    font-size: 25px;
+    float: left;
+
+}
+
+.footer {
+  background-color: aqua;
+  text-align: left;
+  padding: 20px 0;
+  font-size: 35px;
+  font-family: times;

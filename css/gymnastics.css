@@ -1,0 +1,60 @@
+body {
+  font-family: times;
+  padding: 0;
+  margin: auto;
+}
+
+header {
+  width: 600px;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  color: gold;
+  background-color: #281670;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+
+.section1 {
+  position: absolute;
+  left: 10px;
+  top: 80px;
+
+}
+.section2 {
+  position: absolute;
+  left: 300px;
+  top: 80px
+}
+figure {
+  position: absolute;
+  top: 300px;
+  left: -40px;
+
+}
+
+figcaption {
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width: 300px;
+
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+dl {
+  padding-left: 20px;
+  font-size: 18px;
+}

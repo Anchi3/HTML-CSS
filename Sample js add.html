@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sample</title>
+</head>
+
+<body>
+
+<input type="number" id="aa"> <br>
+<br>
+
+<input type="number" id="bb"> <br>
+<br>
+
+<input type="number" id="cc"> <br>
+<br>
+
+<input type="button" value="Compute" onclick="compute()" > <br>
+<br>
+
+<var id="sum">Sum</var>
+
+<script type="text/javascript">
+
+
+function compute() {
+
+	
+let d = document.getElementById("sum");
+
+let a = document.getElementById("aa").value;
+let b = document.getElementById("bb").value;
+let c = document.getElementById("cc").value;
+
+let total = +a + +b + +c;
+
+d.innerHTML = "The sum is " + total;
+
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

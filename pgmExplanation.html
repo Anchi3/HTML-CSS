@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Java Do/While Loop</title>
+  </head>
+  <body>
+
+    <h1>The DO/WHILE Loop Explained</h1>
+      <hr>
+
+      <h2>Java Do/While Loop</h2>
+
+          <p>Loops can <b>execute a block of code</b> as long as a specified condition is reached. Loops are handy because they <i>save time, reduce errors, and they make code more readable</i>. <sup>[1]</sup>
+          <br>
+          <br>
+
+          The do/while loop is a <u>variant of the while loop</u>. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop <b><i>as long as the condition is true</i></b>.
+          </p>
+
+      <h3>Sample Code</h3>
+
+          <pre style="font-size: 18px">
+            class LoopExample {
+            public static void main(String args[]) {
+            int counter = 1;
+            do {
+            System.out.println("Hello World");
+            counter++;
+                } while( counter <= 5 );
+              }
+            }</pre>
+
+        <h3>Output</h3>
+          <pre style="font-size: 18px">
+              Hello World
+              Hello World
+              Hello World
+              Hello World
+              Hello World</pre>
+
+        <h3>Explanation</h3>
+        <p>For this example, we used an integer counter variable, initially set to 1. As for the condition, we used counter <= 5. Do not forget to increase the variable used in the condition, otherwise the loop will never end! <sup>[2]</sup>
+        <br><br>
+        In the loop body, we printed the string "Hello World" using the <b>println()</b> method.
+        <br><br>
+        We also used the <b>++ increment operator</b> to increment the counter variable value by 1.
+        </p>
+        <br>
+        <hr>
+
+        <h4>Citations</h4>
+      <footer>
+        1. 2. Cited texts from <cite> <a href="https://www.w3schools.com/java/java_while_loop.asp">W3Schools</a>.</cite>
+      </footer>
+    </body>
+</html>

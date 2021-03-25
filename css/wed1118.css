@@ -1,0 +1,24 @@
+
+a:link {
+
+  text-decoration: none;
+
+}
+
+a:hover {
+
+  cursor: crosshair;
+
+}
+
+
+table, th, td {
+  border: 3px solid gray;
+  border-collapse: collapse;
+}
+
+th {
+
+  text-align: left;
+
+}

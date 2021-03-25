@@ -1,0 +1,41 @@
+body {
+  font-family: times;
+  padding: 0;
+
+}
+
+table {
+  margin: 50px;
+
+}
+td {
+width: 80px;
+height: 80px;
+
+}
+
+tr {
+font-size: 50px;
+font-weight: bolder;
+color: red;
+padding: 50px;
+
+}
+
+.buttonDiagonal {
+  transform: rotate(-45deg);
+
+}
+
+.buttonDiagonal, .buttonStraight {
+  font-size: 30px;
+  font-weight: bolder;
+  color: darkblue;
+
+
+}
+
+.textbox {
+  width: 15px;
+  margin: 0 10px;
+}

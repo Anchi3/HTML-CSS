@@ -1,0 +1,41 @@
+body {
+  font-family: times;
+  box-sizing: border-box;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: silver;
+}
+
+figure {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: 50%;
+  display: table;
+  vertical-align: middle;
+}
+
+.continents {
+  font-size: 25px;
+  min-width: 160px;
+  text-align: right;
+  height: 75px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.cities {
+  padding-left: 20px;
+  font-size: 17px;
+  min-width: 220px;
+  display: table-cell;
+  text-align: left;
+
+}

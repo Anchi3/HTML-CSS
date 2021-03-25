@@ -1,0 +1,23 @@
+body {
+  background-color: #ffeebf;
+
+}
+
+* {
+  box-sizing: border-box;
+  font-family: times;
+  margin: 0;
+  padding: 0;
+}
+
+a {color: white; text-decoration: none;}
+
+a:hover {text-decoration: underline;}
+
+img {
+
+  max-width: 50%;
+  height: auto;
+  margin-left: 40px;
+  margin-top: 25px;
+}

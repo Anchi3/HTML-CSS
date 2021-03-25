@@ -1,0 +1,16 @@
+body {
+	font-family: times;
+
+}
+
+.numBox {
+	width: 50px;
+  	margin: 0 5px;
+
+}
+
+.numBox:focus {
+	outline: 2px solid red;
+}
+
+

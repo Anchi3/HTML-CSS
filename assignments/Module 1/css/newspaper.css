@@ -1,0 +1,38 @@
+
+body {
+  background-color: cyan;
+  font-family: times;
+
+}
+h1 {
+  text-align: center;
+  font-style: italic;
+  color: blue;
+
+}
+h3 {
+
+  text-align: center;
+}
+.silver {
+  color: hsl(180, 0%, 80%);
+}
+
+.fuschia {
+  color: #ff00ff
+}
+
+.orange {
+  color: rgb(255, 131, 0);
+}
+
+.boldUnderline {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.table {
+  font-family: courier;
+
+
+}

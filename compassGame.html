@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Compass Game</title>
+    <link rel="icon" href="images/1up.jpg">
+    <link rel="stylesheet" href="css/compassGame.css">
+  </head>
+
+  <body>
+
+    <noscript>
+      <p>
+        The Compass Game uses JavaScript. Please enable JavaScript or use a web browser with JavaScript enabled.
+      </p>
+    </noscript>
+
+    <h1>Compass Game</h1>
+
+    <p>The direction letters on the "compass" are scrambled. Press the rows to properly position the direction letters.</p>
+
+    <table>
+
+      <tr>
+        <td><input id="swapButton1" class="buttonDiagonal" type="button" value= "&#8596" onclick="swapNorthWest()"></td>
+        <td id="cell2">E</td>
+        <td></td>
+
+      </tr>
+
+      <tr>
+        <td id="cell4">S</td>
+        <td><input id="swapButton2" class="buttonStraight" type="button" value="&#8596" onclick="swapWestEast()"></td>
+        <td id="cell6">N</td>
+
+      </tr>
+
+      <tr>
+        <td></td>
+        <td id="cell8">W</td>
+        <td><input id="swapButton3" class="buttonDiagonal" type="button" value="&#8596" onclick="swapEastSouth()"></td>
+
+      </tr>
+
+    </table>
+
+      <br>
+
+      <p id ="winMessage"> </p>
+
+      <p>
+        To restart the game, press <i>Restart</i>, enter N, S, E, and W in any order in the boxes below, and then press <i>Update</i>.
+
+      </p>
+
+      <input id="restart" type="button" value="Restart" onclick="clickRestart()">
+
+      <p>
+
+        Top:<input class="textbox" id= "top" type="text" disabled="true" value="N"> 
+        Left:<input class="textbox" id= "left" type="text" disabled="true" value="S"> 
+        Right:<input class="textbox" id= "right" type="text" disabled="true" value="E">
+        Bottom:<input class="textbox" id= "bottom" type="text" disabled="true" value="W">
+
+      </p>
+
+      <input id="update" type="button" value="Update" onclick="clickUpdate()" disabled="true">
+
+  
+
+      <script type="text/javascript">
+
+       //Win Message
+        function gameWon() {
+
+          let win = document.getElementById('winMessage').innerHTML;
+
+          let nCell = document.getElementById('cell2').innerHTML;
+          let wCell = document.getElementById('cell4').innerHTML;
+          let eCell = document.getElementById('cell6').innerHTML;
+          let sCell = document.getElementById('cell8').innerHTML;
+
+          if (nCell.innerHTML === 'N' && wCell.innerHTML === 'W' && eCell.innerHTML === 'E') { 
+
+            document.getElementById ('swapButton1').disabled = true;
+            document.getElementById ('swapButton2').disabled = true;
+            document.getElementById ('swapButton3').disabled = true;
+
+            winMessage.innerHTML = "YOU HAVE WON THE COMPASS GAME!!!";
+
+          }
+
+        }
+ 
+
+        //Restart Button
+        function clickRestart() {
+
+          document.getElementById('cell2').innerHTML = "";
+          document.getElementById('cell4').innerHTML = "";
+          document.getElementById('cell6').innerHTML = "";
+          document.getElementById('cell8').innerHTML = "";
+
+          document.getElementById ('update').disabled = false;
+          document.getElementById ('top').disabled = false;
+          document.getElementById ('left').disabled = false;
+          document.getElementById ('right').disabled = false;
+          document.getElementById ('bottom').disabled = false;
+
+        }
+
+        
+        //Swap Buttons   
+        function swapNorthWest() {
+
+          let a = document.getElementById("cell2").innerHTML;
+          let b = document.getElementById("cell4").innerHTML;
+          let temp = a;
+          a = b;
+          b = temp;
+
+          document.getElementById("cell2").innerHTML = a;
+          document.getElementById("cell4").innerHTML = b;
+
+          gameWon();
+
+        }
+  
+        function swapWestEast() {
+
+          let b = document.getElementById("cell4").innerHTML;
+          let c = document.getElementById("cell6").innerHTML;
+          let temp = b;
+          b = c;
+          c = temp;
+
+          document.getElementById("cell4").innerHTML = b;
+          document.getElementById("cell6").innerHTML = c;
+
+          gameWon();
+
+        }
+
+        function swapEastSouth() {
+
+          let c = document.getElementById("cell6").innerHTML;
+          let d = document.getElementById("cell8").innerHTML;
+          let temp = c;
+          c = d;
+          d = temp;
+
+          document.getElementById("cell6").innerHTML = c;
+          document.getElementById("cell8").innerHTML = d;
+
+          gameWon();
+        }
+
+       //Update Button
+        function clickUpdate() {
+          
+          let newN = document.getElementById('top').value;
+          let newW = document.getElementById('left').value;
+          let newE = document.getElementById('right').value;
+          let newS = document.getElementById('bottom').value;
+
+          document.getElementById("cell2").innerHTML = newN;
+          document.getElementById("cell4").innerHTML = newW;
+          document.getElementById("cell6").innerHTML = newE;
+          document.getElementById("cell8").innerHTML = newS;
+
+          gameWon();
+
+        }
+
+
+      </script>
+
+
+  </body>
+
+
+  </html>

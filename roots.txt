@@ -1,0 +1,152 @@
+/*
+
+			function calculateRoots() {
+
+
+let result = document.getElementById('outputMessage');
+
+let inputA = document.getElementById('numberBoxA').value;
+let inputB = document.getElementById('numberBoxB').value;
+let inputC = document.getElementById('numberBoxC').value;
+
+let D = (+inputB * +inputB) - (4 * +inputA * +inputC);
+
+let alertMessage = "";
+
+//popup window warning
+
+if (
+
++inputA < -99 || +inputA > +99 || !Number.isInteger(+inputA) || +inputA == "" || +inputA == 0 ||
++inputB < -99 || +inputB > +99 || !Number.isInteger(+inputB) || +inputB == "" ||
++inputC < -99 || +inputC > +99 || !Number.isInteger(+inputC) || +inputC == "" )
+
+{
+
+
+if ( +inputA < -99 || +inputA > +99 || +inputA == 0 || +inputA == "" || !Number.isInteger(+inputA)) {
+
+alertMessage += "Invalid entry for a. Must be a non-zero integer between -99 and +99.\n";
+document.getElementById("numberBoxA").style.borderColor = 'red';
+}
+else {
+document.getElementById("numberBoxA").style.borderColor = "";
+}
+
+if ( +inputB < -99 || +inputB > +99 || +inputB == "" || !Number.isInteger(+inputB)) {
+
+alertMessage += "Invalid entry for b. Must be an integer between -99 and +99.\n";
+document.getElementById("numberBoxB").style.borderColor = 'red';
+
+}
+else {
+document.getElementById("numberBoxB").style.borderColor = "";
+}
+
+if ( +inputC < -99 || +inputC > +99 || +inputC == "" || !Number.isInteger(+inputC)) {
+
+alertMessage += "Invalid entry for c. Must be an integer between -99 and +99.\n";
+document.getElementById("numberBoxC").style.borderColor = 'red';
+
+}
+else {
+document.getElementById("numberBoxC").style.borderColor = "";
+}
+
+
+window.alert( alertMessage );
+result.innerHTML = "You have entered an invalid input.";
+
+return;
+}
+
+Mi
+Mike Zorin
+3:46 PM
+function calculateRoots() {
+
+
+let result = document.getElementById('outputMessage');
+
+let inputA = document.getElementById('numberBoxA');
+let inputB = document.getElementById('numberBoxB');
+let inputC = document.getElementById('numberBoxC');
+
+let D = (+inputB.value * +inputB.value) - (4 * +inputA.value * +inputC.value);
+
+let alertMessage = "";
+
+//popup window warning
+
+if (
+
++inputA.value < -99 || +inputA.value > +99 || !Number.isInteger(+inputA.value) || inputA.value == "" || +inputA.value == 0 ||
++inputB.value < -99 || +inputB.value > +99 || !Number.isInteger(+inputB.value) || inputB.value == "" ||
++inputC.value < -99 || +inputC.value > +99 || !Number.isInteger(+inputC.value) || inputC.value == "" )
+
+{
+
+
+if ( +inputA.value < -99 || +inputA.value > +99 || +inputA.value == 0 || inputA.value == "" || !Number.isInteger(+inputA.value)) {
+
+alertMessage += "Invalid entry for a. Must be a non-zero integer between -99 and +99.\n";
+inputA.style.borderColor = 'red';
+}
+else {
+inputA.style.borderColor = "";
+}
+
+if ( +inputB.value < -99 || +inputB.value > +99 || +inputB.value == "" || !Number.isInteger(+inputB.value)) {
+
+alertMessage += "Invalid entry for b. Must be an integer between -99 and +99.\n";
+inputB.style.borderColor = 'red';
+
+}
+else {
+inputB.style.borderColor = "";
+}
+
+if ( +inputC.value < -99 || +inputC.value > +99 || +inputC.value == "" || !Number.isInteger(+inputC.value)) {
+
+alertMessage += "Invalid entry for c. Must be an integer between -99 and +99.\n";
+inputC.style.borderColor = 'red';
+
+}
+else {
+inputC.style.borderColor = "";
+}
+
+
+window.alert( alertMessage );
+result.innerHTML = "You have entered an invalid input.";
+
+return;
+}
+
+
+//result
+if ( D < 0 ) {
+
+result.innerHTML = "Solution: x's roots are imaginary";
+}
+
+if ( D === 0 ) {
+
+let singleRoot = -inputB.value / ( 2 * +inputA.value );
+
+result.innerHTML = "Solution: x = " + singleRoot;
+}
+
+if ( D > 0 ) {
+
+let root1 = ( -inputB.value + Math.sqrt(D) ) / (2 * +inputA.value);
+let root2 = ( -inputB.value - Math.sqrt(D) ) / (2 * +inputA.value);
+
+result.innerHTML = "Solution: x = " + root1.toFixed(2) + ", x = " + root2.toFixed(2);
+
+console.log(typeof root1);
+console.log(typeof root1.toFixed(2));
+}
+
+}*/
+	

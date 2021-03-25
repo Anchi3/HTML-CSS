@@ -1,0 +1,30 @@
+/*@font-face {
+  font-family: MyFontName;
+  src: url("");
+}
+
+p.myFont {
+font-family: MyFontName;
+font-size: 40px;
+
+}
+*/
+.center {
+  width: 300px;
+/*  do not put height. use padding height: 250px;.*/
+  padding: 200px 0 100px 20;
+  border-color: #cccc;
+  text-align: center;
+  border: 2px solid blue;
+  margin: auto;
+
+}
+
+.center2 {
+  width: 500px;
+  padding: 50px 25%;
+  text-align: center;
+  border: 2px dashed blue;
+  margin: auto;
+
+}

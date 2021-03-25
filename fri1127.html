@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <input type="text" id="userInput" onkeyup="onkeyupHandler()" name="testName" value="1">
+    <br>
+    <hr>
+    <p id="userOutput"></p>
+
+    <form>
+      <input type="text" name="inputName" value="">
+      <br><br>
+
+      <input type="radio" id="html" name="inputSubject" value="HTML">
+      <label for="HTML">HTML</label>
+      <br>
+
+      <input type="radio" id="java" name="inputSubject" value="Java">
+      <label for="Java">Java</label>
+      <br>
+
+      <input type="radio" id="css" name="inputSubject" value="CSS">
+      <label for="CSS">CSS</label>
+      <br>
+      <hr>
+
+      <input type="checkbox" name="windows" id="windows" value="windows">
+        <label for="windows">Windows</label>
+      <br>
+
+      <input type="checkbox" name="linux" id="linux" value="linux">
+          <label for="linux">Linux</label>
+        <br>
+
+      <input type="checkbox" name="macos" id="macos" value="macos">
+          <label for="macos">MacOS</label>
+        <br>
+      <br>
+      <hr>
+
+      <input type="button" onclick="btnHandler(this.form)" value="Click!">
+
+    </form>
+
+    <script type="text/javascript">
+
+      let onkeyupHandler = function() {
+        document.getElementById('userOutput').innerHTML =
+          "<b>" + document.getElementById('userInput').value + "</b>";
+      }
+
+      let btnHandler = function(form) {
+
+        console.log( "Name : " + form.elements['inputName'].value );
+        console.log( "Subject : " + form.elements['inputSubject'].value );
+
+        //for checkbox
+        if(form.elements["windows"].checked) {
+          console.log( "OS : " + form.elements['windows'].value );
+
+        if(form.elements["windows"].checked) {
+          console.log( "OS : " + form.elements['windows'].value );
+
+        if(form.elements["windows"].checked) {
+          console.log( "OS : " + form.elements['windows'].value );
+
+        form.elements
+        }
+
+      }
+
+    </script>
+
+  </body>
+</html>

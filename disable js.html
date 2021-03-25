@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <input type="text" id="inputUserText" onkeyup="onkeypressHandler()" />
+    <br>
+    <p id="userOutput"></p>
+
+    <form>
+      <input type="text" name="inputName" value="">
+
+      <hr>
+      <input type="radio" name="course" id="html" value="001-html">
+      <label for="html">HTML</label><br>
+
+      <input type="radio" name="course" id="java" value="002-java">
+      <label for="java">Java</label><br>
+
+      <input type="radio" name="course" id="javascript" value="003-JavaSript">
+      <label for="javascript">JavaScript</label><br>
+      <hr>
+
+      <input type="checkbox" name="windows" id="windows" value="101-windows">
+      <label for="windows">Windows</label>
+      <br>
+      <input type="checkbox" name="linux" id="linux" value="102-linux">
+      <label for="linux">Linux</label>
+      <br>
+      <input type="checkbox" name="macos" id="macos" value="103-macos">
+      <label for="macos">MacOs</label>
+
+      <hr>
+      <input type="button" id="btnSeeInfo" name="btnSeeInfo" onclick="btnHandler(this.form)" value="See User Info">
+    </form>
+
+    <input type="button" id="btnEnableButton" value="Enable Button See Info"
+          onclick="btnEnableButtonHandler()" disabled >
+
+    <script type="text/javascript">
+
+      let btnEnableButtonHandler = function() {
+        document.getElementById('btnEnableButton').disabled = true;
+        document.getElementById('btnSeeInfo').disabled = false;
+      }
+
+      let btnHandler = function(form) {
+
+        console.log( "Name : " +  form.elements['inputName'].value );
+        console.log( "Course : " +  form.elements['course'].value );
+
+        if(form.elements["windows"].checked) {
+          console.log( form.elements['windows'].value );
+        }
+        if(form.elements["linux"].checked) {
+          console.log( form.elements['linux'].value );
+        }
+        if(form.elements["macos"].checked) {
+          console.log( form.elements['macos'].value );
+        }
+
+        form.elements["btnSeeInfo"].disabled = true;
+
+        document.getElementById('btnEnableButton').disabled = false;
+      }
+
+      /*
+        var students = ['Mark', 'John', 'Lucy', 'Rosy', 'ddd'];
+        console.log(  students.length );
+        for(let i = 0; i < 5; ++i) {
+          document.write(  students[i] );
+          document.write('<br>');
+        }
+        */
+
+        let onkeypressHandler = function() {
+            document.getElementById('userOutput').innerHTML =
+              "<b>" + document.getElementById('inputUserText').value + "</b>";
+        }
+
+    </script>
+
+
+  </body>
+
+</html>
